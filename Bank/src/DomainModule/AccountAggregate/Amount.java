@@ -5,15 +5,18 @@ package DomainModule.AccountAggregate;
  */
 public class Amount {
 
-    private Long amount;
+    private long amount;
 
     public Amount(long amount){
 
         this.amount = amount;
     }
 
+    public Amount subtract(Amount amount){
+        return new Amount(this.amount - amount.amount);
+    }
     @Override
     public String toString() {
-        return this.amount.toString();
+        return Long.toString(this.amount);
     }
 }

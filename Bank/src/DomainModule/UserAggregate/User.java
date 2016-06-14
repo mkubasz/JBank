@@ -39,4 +39,13 @@ public class User {
         }
         return null;
     }
+
+    public boolean isAccountNumber(String accountNumber) {
+        for(Account account : accountList){
+            if(account.getAccountNumber().toString().equals(accountNumber)){
+                return true;
+            }
+        }
+        return false;
+    }
 }

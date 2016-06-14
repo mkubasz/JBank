@@ -15,4 +15,9 @@ public class AccountNumber {
     public String toString() {
         return accountNumber;
     }
+
+
+    public boolean equals(AccountNumber accountNumber) {
+        return this.accountNumber.equals(accountNumber.accountNumber);
+    }
 }

@@ -23,9 +23,9 @@ public class MainBank {
         Account account = user.getAccount("pierwsze");
         String infos = account.getInfo();
         String amount = account.checkAmount();
-        boolean transactionSendAll = account.sendTransaction(new Transaction(new Name("Adam", "Niezgoda"), new AccountNumber("213"), new Address("Polska","Opole","45-047","Warynskiego","31","30")));
+/*        boolean transactionSendAll = account.sendTransaction(new Transaction(new Name("Adam", "Niezgoda"), new AccountNumber("213"), new Address("Polska","Opole","45-047","Warynskiego","31","30")));
         boolean transactionSendName = account.sendTransaction(new Transaction(new Name("Adam", "Niezgoda"), new AccountNumber("213")));
-        boolean transactionSend = account.sendTransaction(new Transaction(new AccountNumber("213")));
+        boolean transactionSend = account.sendTransaction(new Transaction(new AccountNumber("213")));*/
         boolean transactionRecivd = account.checkLastTransaction();
 
     }
